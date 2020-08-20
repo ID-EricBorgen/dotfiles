@@ -1,3 +1,5 @@
-Set-PSReadlineOption -TokenKind String -ForegroundColor Magenta
-Set-PSReadlineOption -TokenKind Operator -ForegroundColor Cyan
-Set-PSReadlineOption -TokenKind Parameter -ForegroundColor Cyan 
+Set-PSReadLineOption -colors @{
+    Operator           = 'Cyan'
+    Parameter          = 'Cyan'
+    String             = 'White'
+  }
